@@ -3,7 +3,7 @@
     CreatedDate: 2021-07-13
     FileName   : permute.py
     Author     : Honghe
-    Descreption: 
+    Descreption: 46、全排列
 """
 import copy
 

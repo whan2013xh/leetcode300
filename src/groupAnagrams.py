@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 # Created by mayn on 2021/7/12
 # Copyright (c) 2021 mayn. All rights reserved.
+# 49、字母异位词分组
 
 class Solution(object):
     def groupAnagrams(self, strs):
