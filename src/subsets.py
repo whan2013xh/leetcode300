@@ -25,7 +25,7 @@ class Solution(object):
 
     def subsets2(self, nums):
         """
-        深度优先遍历：
+        深度优先遍历：优先深度遍历
         :type nums: List[int]
         :rtype: List[List[int]]
         """
@@ -44,7 +44,7 @@ class Solution(object):
 
     def subsets3(self, nums):
         """
-        回溯法：
+        回溯法：这个其实也可以理解为宽度优先遍历，就是以子集长度为优先遍历条件。
         :type nums: List[int]
         :rtype: List[List[int]]
         """
