@@ -13,6 +13,7 @@ class ListNode(object):
 class Solution(object):
     def removeElements(self, head, val):
         """
+        顺序遍历法
         :type head: ListNode
         :type val: int
         :rtype: ListNode
@@ -31,6 +32,21 @@ class Solution(object):
                 prev.next = next
                 cur = next
         return res.next
+
+    def removeElements2(self, head, val):
+        """
+        递归法
+        :type head: ListNode
+        :type val: int
+        :rtype: ListNode
+        """
+        if head is None:
+            return None
+        head.next = self.removeElements2(head.next, val)
+        if head.val == val:
+            return head.next
+        else:
+            return head
 
 if __name__ == '__main__':
     node1 = ListNode(1)
