@@ -18,5 +18,22 @@ class Solution(object):
         if n>=1:
             res.append(1)
         tmp = []
-        count = 1
-        for i in range(2,n):
+        i = 2
+        while i<=n:
+            for j in res:
+                if i<=n:
+                    tmp.append(j+1)
+                    i+=1
+                else:
+                    break
+            res+=tmp
+            tmp = []
+        return res
+
+if __name__ == '__main__':
+    sol = Solution()
+    n = 5
+    print(sol.countBits(n))
+
+
+
